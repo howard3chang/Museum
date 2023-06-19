@@ -17,7 +17,7 @@ from scipy.spatial.distance import cosine
 
 import openai
 
-openai.api_key = "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"  # there is a limit on this API - if used too much it will trigger shut down
+openai.api_key = "enter the openai API key"  # removed api key
 
 st.title("MSDS 459 Museum Recommender")
 
@@ -42,8 +42,8 @@ if button:
 
 # Foursquare- to start
 
-CLIENT_ID = 'GYE35LWRDA535NWYTHAIW5R05ZMK4SH2IRCERZTOXMUN2MT1' # your Foursquare ID
-CLIENT_SECRET = '3IQEHJJ4EYZGWD5KIAT3NHOLNTKTMVWA4T5SZSOKHZGH0TKY' # your Foursquare Secret
+CLIENT_ID = '' # your Foursquare ID
+CLIENT_SECRET = '' # your Foursquare Secret
 VERSION = '20180605' # Foursquare API version
 
 LIMIT = 70 # A default Foursquare API limit value
@@ -52,7 +52,7 @@ address = address_query
 
 ##replacement code- use google geo instead
 
-GOOGLE_API_KEY = 'AIzaSyCy9hYptxqt6A72XBlT_jcm6tzVPelD36I' 
+GOOGLE_API_KEY = '' #removed api key
 
 def extract_lat_long_via_address(address_or_zipcode):
     lat, lng = None, None
